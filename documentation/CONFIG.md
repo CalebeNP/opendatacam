@@ -34,7 +34,7 @@ We offer several customization options:
 
 #### For a standard install of OpenDataCam
 
-All settings are in the [`config.json`](https://github.com/opendatacam/opendatacam/blob/master/config.json) file that you will find in the same directory you run the install script.
+All settings are in the [`config.json`](https://github.com/CalebeNP/opendatacam/blob/master/config.json) file that you will find in the same directory you run the install script.
 
 When you modify a setting, you will need to restart the docker container, you can do so by:
 
@@ -153,7 +153,7 @@ The settings are the same as with the docker install, but you can also run from 
 
 By default, the opendatacam will track all the classes that the neural network is trained to track. In our case, YOLO is trained with the VOC dataset, here is the [complete list of classes](https://github.com/pjreddie/darknet/blob/master/data/voc.names)
 
-You can restrict the opendatacam to some specific classes with the VALID_CLASSES option in the [config.json file](https://github.com/opendatacam/opendatacam/blob/master/config.json) .
+You can restrict the opendatacam to some specific classes with the VALID_CLASSES option in the [config.json file](https://github.com/CalebeNP/opendatacam/blob/master/config.json) .
 
 _Find which classes YOLO is tracking depending on the weights you are running. For example [yolov3 trained on COCO dataset classes](https://github.com/AlexeyAB/darknet/blob/master/data/coco.names)_
 
@@ -173,7 +173,7 @@ In order to track all the classes (default value), you need to set it to:
 }
 ```
 
-*Extra note: the tracking algorithm might work better by allowing all the classes, in our test we saw that for some classes like Bike/Motorbike, YOLO had a hard time distinguishing them well, and was switching between classes across frames for the same object. By keeping all the detections classes we saw that we can avoid losing some objects, this is [discussed here](https://github.com/opendatacam/opendatacam/issues/51#issuecomment-418019606)*
+*Extra note: the tracking algorithm might work better by allowing all the classes, in our test we saw that for some classes like Bike/Motorbike, YOLO had a hard time distinguishing them well, and was switching between classes across frames for the same object. By keeping all the detections classes we saw that we can avoid losing some objects, this is [discussed here](https://github.com/CalebeNP/opendatacam/issues/51#issuecomment-418019606)*
 
 ### Display custom classes
 
@@ -296,7 +296,7 @@ With the default installation, OpenDataCam will have `VIDEO_INPUT` set to `usbca
 
 _Technical note:_
 
-Behind the hoods, this config input becomes [the input of the darknet](https://github.com/opendatacam/opendatacam/blob/master/server/processes/YOLO.js#L32) process which then get [fed into OpenCV VideoCapture()](https://github.com/AlexeyAB/darknet/blob/master/src/image_opencv.cpp#L577).
+Behind the hoods, this config input becomes [the input of the darknet](https://github.com/CalebeNP/opendatacam/blob/master/server/processes/YOLO.js#L32) process which then get [fed into OpenCV VideoCapture()](https://github.com/AlexeyAB/darknet/blob/master/src/image_opencv.cpp#L577).
 
 As we compile OpenCV with Gstreamer support when installing OpenDataCam, we can use any [Gstreamer pipeline](http://www.einarsundgren.se/gstreamer-basic-real-time-streaming-tutorial/) as input + other VideoCapture supported format like video files / IP cam streams. 
 
@@ -377,7 +377,7 @@ _NOTE: Increasing webcam resolution won't increase OpenDataCam accuracy, the inp
 #### Use Custom Neural Network weights
 
 In order to use other weights like [yolov3-openimages](https://pjreddie.com/media/files/yolov3-openimages.weights), [yolov3-spp](https://pjreddie.com/media/files/yolov3-spp.weights), custom trained ones or  ["third party" weights](https://giou.stanford.edu/)
-you need to [install OpenDataCam without Docker](USE_WITHOUT_DOCKER.md) _(we will enable this for docker install at some point [#97](https://github.com/opendatacam/opendatacam/issues/97))_.
+you need to [install OpenDataCam without Docker](USE_WITHOUT_DOCKER.md) _(we will enable this for docker install at some point [#97](https://github.com/CalebeNP/opendatacam/issues/97))_.
 
 For example, if you want to use [yolov3-openimages](https://pjreddie.com/media/files/yolov3-openimages.weights), you need to:
 

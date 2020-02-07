@@ -174,7 +174,7 @@ _[Follow this article](https://www.jetsonhacks.com/2019/04/02/jetson-nano-raspbe
 
 #### Use Raspberry Pi Cam with a non-docker installation of Opendatacam
 
-_NB: [We hope this won't be necessary](https://github.com/opendatacam/opendatacam/issues/89) after Jetpack 4.2.1 release with native docker support._
+_NB: [We hope this won't be necessary](https://github.com/CalebeNP/opendatacam/issues/89) after Jetpack 4.2.1 release with native docker support._
 
 - Follow [Install without docker guide](../USE_WITHOUT_DOCKER.md)
 
@@ -186,7 +186,7 @@ Restart Opendatacam, [learn more about changing config.json here](../CONFIG.md).
 
 _This is experimental, it might work for a time and then stop working... If it is the case you will be forced to re-flash your Jetson Nano as we have don't know a way to uninstall this._
 
-_NB: [We hope this won't be necessary anymore](https://github.com/opendatacam/opendatacam/issues/89) after Jetpack 4.2.1 release with native docker support._
+_NB: [We hope this won't be necessary anymore](https://github.com/CalebeNP/opendatacam/issues/89) after Jetpack 4.2.1 release with native docker support._
 
 ##### Setup
 

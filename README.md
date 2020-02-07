@@ -85,7 +85,7 @@ ls /dev/video*
 # Output should be: /dev/video0
 ```
 
-_If this isn't the case, run the install script anyway, and after you will need to [modify the config.json](documentation/CONFIG.md) file to select your desired VIDEO_INPUT (file, usbcam, raspberrycam, remote IP cam), [we will improve setup / install process for v2.1](https://github.com/opendatacam/opendatacam/issues/89) 💪_
+_If this isn't the case, run the install script anyway, and after you will need to [modify the config.json](documentation/CONFIG.md) file to select your desired VIDEO_INPUT (file, usbcam, raspberrycam, remote IP cam), [we will improve setup / install process for v2.1](https://github.com/CalebeNP/opendatacam/issues/89) 💪_
 
 - _For a nvidia-docker compatible machine:_ it will run on a demo file
 
@@ -163,9 +163,9 @@ We offer several customization options:
 
 Docker doesn't support GPU usage on Jetson _(see [issue #214 on docker-nvidia official repo](https://github.com/NVIDIA/nvidia-docker/issues/214) , support should be landing around Q3-Q4 2019)_
 
-Meanwhile we need to give to the docker container access to the host platform GPU. We do so by mounting several volumes with [this script](https://github.com/opendatacam/opendatacam/blob/master/docker/run-jetson/run-docker.sh).
+Meanwhile we need to give to the docker container access to the host platform GPU. We do so by mounting several volumes with [this script](https://github.com/CalebeNP/opendatacam/blob/master/docker/run-jetson/run-docker.sh).
 
-That is why you need to use our install script to install a container. We have [an open issue](https://github.com/opendatacam/opendatacam/issues/89) to simplify setup once nvidia-docker support lands for jetson devices.
+That is why you need to use our install script to install a container. We have [an open issue](https://github.com/CalebeNP/opendatacam/issues/89) to simplify setup once nvidia-docker support lands for jetson devices.
 
 **How to show OpenDataCam logs**
 
@@ -232,7 +232,7 @@ See [How to create / update a docker image for a nvidia-docker machine](document
 
 ## 🎯 How accurate is OpenDataCam ?
 
-We are working on [adding a benchmark](https://github.com/opendatacam/opendatacam/issues/87) to rank OpenDataCam on the [MOT Challenge (Multiple Object Tracking Benchmark)](https://motchallenge.net/) for v2.1.
+We are working on [adding a benchmark](https://github.com/CalebeNP/opendatacam/issues/87) to rank OpenDataCam on the [MOT Challenge (Multiple Object Tracking Benchmark)](https://motchallenge.net/) for v2.1.
 
 Accuracy depends on which YOLO weights your hardware is capable of running.
 

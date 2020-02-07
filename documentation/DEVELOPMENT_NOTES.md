@@ -8,7 +8,7 @@ Simulation mode is useful to work on the UI and node.js feature deployment witho
 
 ```bash
 # Clone repo
-git clone https://github.com/opendatacam/opendatacam.git
+git clone https://github.com/CalebeNP/opendatacam.git
 
 or
 

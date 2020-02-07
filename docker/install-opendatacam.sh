@@ -109,7 +109,7 @@ case $argument in
     echo "Create the directory to run on files ..."
     mkdir -p opendatacam_videos
     echo "Download demo video ..."
-    wget -N https://github.com/opendatacam/opendatacam/raw/$VERSION/static/demo/demo.mp4 -O opendatacam_videos/demo.mp4
+    wget -N https://github.com/CalebeNP/opendatacam/raw/$VERSION/static/demo/demo.mp4 -O opendatacam_videos/demo.mp4
 
     # Replace VIDEO_INPUT and NEURAL_NETWORK with default config for this platform
     VIDEO_INPUT=${DEFAUT_VIDEO_INPUT_OPTIONS[$INDEX]}
@@ -172,7 +172,7 @@ case $argument in
     fi
 
     echo "OpenDataCam will start automaticaly on boot when you restart you jetson"
-    echo "If you want to stop it, please refer to the doc: https://github.com/opendatacam/opendatacam"
+    echo "If you want to stop it, please refer to the doc: https://github.com/CalebeNP/opendatacam"
 
     ;;
   *)

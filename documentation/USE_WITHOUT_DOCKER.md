@@ -220,7 +220,7 @@ sudo systemctl enable mongod
 - Download source
 
 ```bash
-git clone --depth 1 https://github.com/opendatacam/opendatacam.git
+git clone --depth 1 https://github.com/CalebeNP/opendatacam.git
 cd opendatacam
 ```
 
