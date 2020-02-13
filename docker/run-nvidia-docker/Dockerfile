@@ -91,8 +91,6 @@ RUN sed -i -e s+TO_REPLACE_NEURAL_NETWORK+yolov3+ config.json
 RUN npm install
 RUN npm run build
 
-ARG MONGO_PORT[=27017]
-
 RUN wget https://raw.githubusercontent.com/CalebeNP/opendatacam/master/docker/run-jetson/docker-start-mongo-and-opendatacam.sh
 RUN chmod 777 docker-start-mongo-and-opendatacam.sh
-CMD ./docker-start-mongo-and-opendatacam.sh MONGO_PORT
+CMD ./docker-start-mongo-and-opendatacam.sh

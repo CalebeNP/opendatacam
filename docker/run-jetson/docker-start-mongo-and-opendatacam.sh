@@ -6,7 +6,7 @@
 # Maybe can use pm2 inside a docker container
 
 # Start the first process
-mongod --port $1 &
+mongod &
 status=$?
 if [ $status -ne 0 ]; then
   echo "Failed to start mongod: $status"
