@@ -92,23 +92,23 @@ case $argument in
     # Get the run-docker script
 
     if [[ "$PLATFORM" != ${PLATFORM_OPTIONS[3]} ]]; then
-      wget -N https://raw.githubusercontent.com/opendatacam/opendatacam/$VERSION/docker/run-jetson/run-docker.sh
+      wget -N https://raw.githubusercontent.com/CalebeNP/opendatacam/$VERSION/docker/run-jetson/run-docker.sh
       # Chmod to give exec permissions
       chmod 777 run-docker.sh
     else
-      wget -N https://raw.githubusercontent.com/opendatacam/opendatacam/$VERSION/docker/run-nvidia-docker/run-nvidiadocker.sh
+      wget -N https://raw.githubusercontent.com/CalebeNP/opendatacam/$VERSION/docker/run-nvidia-docker/run-nvidiadocker.sh
       # Chmod to give exec permissions
       chmod 777 run-nvidiadocker.sh
     fi
     
     # Get the config file
     echo "Download config file ..."
-    wget -N https://raw.githubusercontent.com/opendatacam/opendatacam/$VERSION/config.json
+    wget -N https://raw.githubusercontent.com/CalebeNP/opendatacam/$VERSION/config.json
 
     # Create the directory to run on files
     echo "Create the directory to run on files ..."
     mkdir -p opendatacam_videos
-    echo "Download demo video ..."
+    echo "Download demo video ..."https://raw.githubusercontent.com/CalebeNP
     wget -N https://github.com/CalebeNP/opendatacam/raw/$VERSION/static/demo/demo.mp4 -O opendatacam_videos/demo.mp4
 
     # Replace VIDEO_INPUT and NEURAL_NETWORK with default config for this platform

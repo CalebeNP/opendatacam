@@ -93,7 +93,7 @@ __Install commands:__
 
 ```bash
 # Download install script
-wget -N https://raw.githubusercontent.com/opendatacam/opendatacam/v2.1.0/docker/install-opendatacam.sh
+wget -N https://raw.githubusercontent.com/CalebeNP/opendatacam/v2.1.0/docker/install-opendatacam.sh
 
 # Give exec permission
 chmod 777 install-opendatacam.sh

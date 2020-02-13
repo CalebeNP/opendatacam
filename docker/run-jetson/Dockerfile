@@ -54,7 +54,7 @@ RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 9DA31620334BD75
 RUN apt-get update && apt-get install -y openssl libcurl3 mongodb-org
 VOLUME ["/data/db"]
 
-EXPOSE 8080 8070 8090 27017
+EXPOSE 27017
 
 # # Because we want to run mongodb and the node.js app
 # # See https://docs.docker.com/config/containers/multi-service_container/

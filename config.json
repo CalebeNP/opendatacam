@@ -69,5 +69,8 @@
       "canvasResolutionFactor": 0.1
     }
   },
-  "MONGODB_URL": "mongodb://127.0.0.1:27017"
+  "MONGODB_URL": "mongodb://127.0.0.1:27017",
+  "JSON_PORT": 8070,
+  "SERVER_PORT": 8080,
+  "MJPEG_PORT": 8090
 }

@@ -516,7 +516,7 @@ module.exports = {
 
     var options = {
       hostname: urlData.address,
-      port:     8070,
+      port:     config.JSON_PORT,
       path:     '/',
       method:   'GET'
     };

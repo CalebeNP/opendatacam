@@ -119,7 +119,7 @@ _If you have a Raspberry Pi Cam, [see advanced usage](#advanced-usage)._
 
 ```bash
 # Download install script
-wget -N https://raw.githubusercontent.com/opendatacam/opendatacam/v2.1.0/docker/install-opendatacam.sh
+wget -N https://raw.githubusercontent.com/CalebeNP/opendatacam/v2.1.0/docker/install-opendatacam.sh
 
 # Give exec permission
 chmod 777 install-opendatacam.sh
@@ -192,8 +192,8 @@ _NB: [We hope this won't be necessary anymore](https://github.com/CalebeNP/opend
 
 ```bash
 # Get scripts
-wget -N https://raw.githubusercontent.com/opendatacam/opendatacam/master/docker/run-jetson/setup-raspberrycam-proxy.sh
-wget -N https://raw.githubusercontent.com/opendatacam/opendatacam/master/docker/run-jetson/run-raspberrycam-proxy.sh
+wget -N https://raw.githubusercontent.com/CalebeNP/opendatacam/master/docker/run-jetson/setup-raspberrycam-proxy.sh
+wget -N https://raw.githubusercontent.com/CalebeNP/opendatacam/master/docker/run-jetson/run-raspberrycam-proxy.sh
 # Give run permission
 sudo chmod 777 run-raspberrycam-proxy.sh setup-raspberrycam-proxy.sh
 

@@ -1,9 +1,9 @@
 const http = require('http');
-   
+const config = require('../../config.json');
 
 var request_options = {
     hostname: '192.168.2.161',
-    port: 8090
+    port: config.MJPEG_PORT
 };
 
 var req_pipe = http.request(request_options, (res) => {

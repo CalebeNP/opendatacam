@@ -21,7 +21,7 @@ If your CUDA_ARCH_BIN isn't 6.1, [change the flag in the Dockerfile](https://git
 mkdir docker
 cd docker
 # get the docker file : https://github.com/CalebeNP/opendatacam/blob/master/docker/run-cloud/Dockerfile
-wget https://raw.githubusercontent.com/opendatacam/opendatacam/master/docker/run-nvidia-docker/Dockerfile
+wget https://raw.githubusercontent.com/CalebeNP/opendatacam/master/docker/run-nvidia-docker/Dockerfile
 # Build
 # Takes a really long time the first time as it compiles opencv
 sudo docker build -t opendatacam .

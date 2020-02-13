@@ -1,8 +1,9 @@
 const http = require('http');
+const config = require('../../config.json');
 
 var options = {
     hostname: '192.168.2.161',
-    port: 8070,
+    port: config.JSON_PORT,
     path: '/',
     method: 'GET'
 };
