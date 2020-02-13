@@ -40,19 +40,19 @@ If you have an error while doing `npm install` it is probably a problem with nod
 
 ```
 # Tag latest commit
-git tag v2.1.2
+git tag v2.1.3
 
 # Push tag
-git push origin v2.1.2
+git push origin v2.1.3
 
 # List tags
 git tag --list
 
 # Remove tag on remote
-git push origin :v2.1.2
+git push origin :v2.1.3
 
 # Delete local tag
-git tag --delete v2.1.2
+git tag --delete v2.1.3
 
 # Push all tag
 git push --tags
