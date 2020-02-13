@@ -22,7 +22,7 @@ jetson_release
 
 # Output should be something like:
 # - NVIDIA Jetson TX2
-#  * Jetpack 4.2 [L4T 32.1.0]
+#  * Jetpack 4.2 [L4T 32.1.1]
 #  * CUDA GPU architecture 6.2
 #  * NV Power Mode: MAXN - Type: 0
 ```

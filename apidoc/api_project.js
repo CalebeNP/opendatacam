@@ -1,6 +1,6 @@
 define({
   "name": "OpenDataCam API",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "",
   "title": "OpenDataCam API",
   "template": {
