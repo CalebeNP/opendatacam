@@ -20,7 +20,7 @@ class DBManager {
         if (err) {
           reject(err)
         } else {
-          let db = client.db('opendatacam')
+          let db = client.db(config.MONGODB_NAME)
           this.db = db
 
           // Get the collection
