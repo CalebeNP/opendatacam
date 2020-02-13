@@ -38,7 +38,7 @@ RUN apt-get install -y nodejs
 # date > marker && sudo docker build -t opendatacam .
 COPY marker /dev/null
 
-RUN git clone --depth 1 -b v2.1.1 https://github.com/CalebeNP/opendatacam /opendatacam
+RUN git clone --depth 1 -b v2.1.2 https://github.com/CalebeNP/opendatacam /opendatacam
 
 WORKDIR /opendatacam
 
